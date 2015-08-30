@@ -19,4 +19,16 @@ import pickle
 
 enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
 
+print enron_data.keys()
+i=0
+j=0
+for item, thing in enron_data.iteritems():
+    if thing['total_payments'] == 'NaN':
+        i += 1
+    j+= 1
 
+print i, j
+
+#jeffrey 8682716
+#kenneth 103559793
+#andy 2424083
