@@ -27,7 +27,6 @@ for item, thing in enron_data.iteritems():
         i += 1
     j+= 1
 
-print i, j
 
 #jeffrey 8682716
 #kenneth 103559793
