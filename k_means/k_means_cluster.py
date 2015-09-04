@@ -73,7 +73,12 @@ clf = KMeans(n_clusters=2)
 pred = clf.fit_predict( finance_features )
 Draw(pred, finance_features, poi, name="clusters_before_scaling.pdf", f1_name=feature_1, f2_name=feature_2)
 
+list = []
+for item in data2:
+    list.append(item[1])
 
+list.sort()
+print list
 ### cluster here; create predictions of the cluster labels
 ### for the data and store them to a list called pred
 
